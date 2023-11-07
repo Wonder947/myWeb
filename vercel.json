@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "my-web",
+    "name": "myweb",
     "builds": [
        { "src": "app.mjs", "use": "@vercel/node" }
     ],
