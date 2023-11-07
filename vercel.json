@@ -5,17 +5,8 @@
        { "src": "app.mjs", "use": "@vercel/node" }
     ],
     "routes": [
+        {"src": "/*.hbs", "dest": "/views/*.hbs"},
        { "src": "/(.*)", "dest": "/app.mjs" }
     ],
-    "installCommand": "npm install",
-    "headers": [
-        {
-            "source": "/app.mjs",
-            "headers": [
-                {
-                    "view engine": "hbs"
-                }
-            ]
-        }
-    ]
+    "installCommand": "npm install"
  }
