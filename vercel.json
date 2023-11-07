@@ -7,5 +7,15 @@
     "routes": [
        { "src": "/(.*)", "dest": "/app.mjs" }
     ],
-    "installCommand": "npm install"
+    "installCommand": "npm install",
+    "headers": [
+        {
+            "source": "/app.mjs",
+            "headers": [
+                {
+                    "view engine": "hbs"
+                }
+            ]
+        }
+    ]
  }
