@@ -1,12 +1,3 @@
 {
-    "version": 2,
-    "name": "myweb",
-    "builds": [
-       { "src": "app.mjs", "use": "@vercel/node" }
-    ],
-    "routes": [
-        {"src": "/*.hbs", "dest": "/views/*.hbs"},
-       { "src": "/(.*)", "dest": "/app.mjs" }
-    ],
-    "installCommand": "npm install"
- }
+    "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }]
+}
